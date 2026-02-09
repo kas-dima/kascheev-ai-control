@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroVideo from "@/assets/hero-video.mov";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -68,10 +68,12 @@ const HeroSection = () => {
       >
         <div className="glow-border cinematic-glow overflow-hidden rounded-cinematic">
           <div className="relative aspect-video w-full overflow-hidden bg-card">
-            {/* Replace this img with a <video> tag for Veo 4K */}
-            <img
-              src={heroBg}
-              alt="AI Neural Network Visualization"
+            <video
+              src={heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="h-full w-full object-cover"
             />
             {/* Overlay gradient */}
