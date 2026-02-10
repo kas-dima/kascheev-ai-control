@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 const Footer = () => {
-  return <footer id="contact" className="relative px-4 py-24 sm:py-32">
+  return <footer id="contact" className="relative px-4 py-24 sm:py-[50px]">
       <div className="mx-auto max-w-6xl">
         {/* CTA */}
         <motion.div initial={{
